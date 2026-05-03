@@ -19,6 +19,7 @@ class TPQueue {
     item->next = nullptr;
     return item;
   }
+
  public:
   TPQueue(): head(nullptr), tail(nullptr) {}
   void print() {
@@ -61,8 +62,7 @@ class TPQueue {
         head = tail = nullptr;
         return item;
       }
-    }
-    else {
+    } else {
         return head->data;
     }
   }
